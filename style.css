@@ -53,7 +53,9 @@ nav{
     display: block; 
  }
  li:hover{
-    background-color: red;
+    background-color: pink;
+    border-radius: 10px;
+    color:white;
 }
 li{
     display: flex;
