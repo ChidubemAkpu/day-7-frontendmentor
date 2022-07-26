@@ -2,6 +2,10 @@
     box-sizing: border-box;
     padding: 0; margin: 0;
     font-family: 'Epilogue', sans-serif;
+   
+}
+body{
+    background:hsl(0, 0%, 98%);
 }
 nav{
     display: flex;
@@ -15,8 +19,9 @@ nav{
     position: fixed;
     margin:  auto; 
     overflow: auto;
-    right: -200vw;
-    transition:right 2s;
+    right: -100vw;
+    z-index: 1;
+    transition:right 0.6s linear;
     top: 0;
     
 }
@@ -43,13 +48,13 @@ nav{
 .nav-list1, .nav-list2{
     list-style-type: none;
     margin: 0.5em 1em;
-    display:none;
-    transition:all 3s;
+    display: none;
+    transition: 3s;
     
     /* display: none; */
 }
  .hide-drop{ 
-    display: block; 
+    display: block;
  }
  li:hover{
     background-color: pink;
@@ -71,8 +76,8 @@ li{
 
 .for-menu{
     width: 60%;
-    height: 100vh;
     background: white;
+    height: 100vh;
     padding: 0.1em 2em;
     display: flex;
     flex-direction:column;
@@ -123,6 +128,11 @@ a{
     padding: 0.8em;
     border-radius: 15px;;
 }
+a:hover{
+    background:white;
+    color:hsl(0, 0%, 8%);
+    border: 1px solid  hsl(0, 0%, 8%);
+}
 .other-logos {
     display: flex;
     justify-content: space-around;
@@ -131,3 +141,81 @@ a{
     height: 30px;
     width:50px;
 }
+@media screen and (min-width: 900px) {
+    nav{
+        display: flex;
+        justify-content: left;
+        gap: 1em;
+        margin: 0 auto 2em;
+        height: 9vh;
+    }
+    .for-menu-container{
+        position: relative;
+        right:0;
+        overflow: hidden;
+        padding:0;
+        height: 100%;
+        margin:0;
+        z-index:1;
+    }
+    .opacity-section{
+        display: none;
+    }
+    .for-menu{
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        background:hsl(0, 0%, 98%);
+    }
+    .open-and-close{
+        display: none;
+    }
+    #for-close{
+        display: none;
+    }
+    .section1{
+        flex-direction: row;
+    }
+    .section2{
+        display: flex;
+        flex-direction: row;
+        padding:0;
+        justify-content: space-between;
+        width: 20%;
+    }
+    .section2 div{
+        margin: 0 auto;
+        padding:0.1em 0.6em;;
+    }
+    .nav-list1, .nav-list2{
+        background: white;
+        border-radius: 10px;;
+        position:fixed;
+        z-index:2;
+        border: 1px solid hsl(0, 0%, 98%);
+        padding: 0.6em 1.2em;
+    }
+    
+    .nav-list1{
+        left: 70px;
+    }
+    .hero-image{
+        background: url('images/image-hero-desktop.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        order: 2;
+    }
+    main{
+        display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     padding: 6em 4em;;
+     column-gap: 1em;
+    }
+    a{
+        width: 30%;
+    }
+
+}
+
+

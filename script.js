@@ -13,6 +13,16 @@ dropDown2.addEventListener('click', drop2);
 let imgLink1 = dropDown1.querySelector('img');
 let imgLink2 = dropDown2.querySelector('img');
 
+function drop1() {
+    document.querySelector('.nav-list1').classList.toggle('hide-drop');
+    if(imgLink1.src.includes('images/icon-arrow-down.svg')) {
+        imgLink1.src = 'images/icon-arrow-up.svg'
+    } else {
+        imgLink1.src = 'images/icon-arrow-down.svg'
+    }
+}
+
+
 function drop2() {
     document.querySelector('.nav-list2').classList.toggle('hide-drop')
     if(imgLink2.src.includes('images/icon-arrow-down.svg')) {
@@ -22,14 +32,6 @@ function drop2() {
     }
 }
 
-function drop1() {
-    document.querySelector('.nav-list1').classList.toggle('hide-drop');
-    if(imgLink1.src.includes('images/icon-arrow-down.svg')) {
-        imgLink1.src = 'images/icon-arrow-up.svg'
-    } else {
-        imgLink1.src = 'images/icon-arrow-down.svg'
-    }
-}
 
 
 
