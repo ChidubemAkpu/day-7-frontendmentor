@@ -82,6 +82,8 @@ li{
     display: flex;
     flex-direction:column;
     row-gap: 1.5em;
+    position: relative;
+    z-index: 1;;
 }
 
 .section2 div{
@@ -162,7 +164,7 @@ footer{
         justify-content: left;
         gap: 1em;
         margin: 0 auto 2em;
-        height: 9vh;
+        height: 10vh;
     }
     .for-menu-container{
         position: relative;
@@ -213,7 +215,7 @@ footer{
     }
     
     .nav-list1{
-        left: 70px;
+        left: 10%;
     }
     .hero-image{
         background: url('images/image-hero-desktop.png');
