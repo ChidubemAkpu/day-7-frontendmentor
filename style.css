@@ -169,7 +169,6 @@ footer{
         justify-content: space-between;
         gap: 1em;
         margin: 0 auto 2em;
-        height: 15vh;
     }
     .for-menu-container{
         position: static;
@@ -211,15 +210,16 @@ footer{
     }
     .nav-list1, .nav-list2{
         background: white;
-        border-radius: 10px;;
-        position:fixed;
-        z-index:2;
-        border: 1px solid hsl(0, 0%, 98%);
+        border-radius: 10px;
+        z-index: 10;
+        position: fixed;
+        box-shadow: 0 0 2px black;
         padding: 0.6em 1.2em;
+        margin: 1em 2em;
     }
     
     .nav-list1{
-        left: 6%;
+        left: 2%;
     }
     .hero-image{
         background: url('images/image-hero-desktop.png');
