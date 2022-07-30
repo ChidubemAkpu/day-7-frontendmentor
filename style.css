@@ -12,6 +12,7 @@ nav{
     justify-content: space-between;
     padding: 1em;
     margin: 0 auto 2em;
+    align-items: center;
 }
 .for-menu-container{
     width: 100vw;
@@ -165,19 +166,17 @@ footer{
 @media screen and (min-width: 900px) {
     nav{
         display: flex;
-        justify-content: left;
+        justify-content: space-between;
         gap: 1em;
         margin: 0 auto 2em;
         height: 15vh;
     }
     .for-menu-container{
-        position: relative;
+        position: static;
         right:0;
-        overflow: hidden;
         padding:0;
-        height: 100%;
+        height: auto;
         margin:0;
-        z-index:1;
     }
     .opacity-section{
         display: none;
@@ -185,9 +184,10 @@ footer{
     .for-menu{
         width: 100%;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
         background:hsl(0, 0%, 98%);
+        height: auto;
     }
     .open-and-close{
         display: none;
@@ -207,7 +207,7 @@ footer{
     }
     .section2 div{
         margin: 0 auto;
-        padding:0.1em 0.6em;;
+        padding:0.6em;;
     }
     .nav-list1, .nav-list2{
         background: white;
